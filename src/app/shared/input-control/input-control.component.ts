@@ -13,6 +13,7 @@ export class InputControlComponent implements OnInit {
   @Input() placeholder: string = '';
   @Input() required: boolean = false;
   @Input() readonly: boolean = false;
+  @Input() icon: string = '';
 
   constructor() {}
 

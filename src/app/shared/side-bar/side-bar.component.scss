@@ -1,0 +1,32 @@
+.wrapper {
+  padding: 5px;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+}
+
+mat-sidenav-container {
+  height: calc(195vh - 108vh);
+}
+
+.mat-toolbar {
+  background: #1e90ff;
+}
+
+.btn-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+button {
+  outline: none;
+  border: none;
+  padding: 12px 35px;
+  background: dodgerblue;
+  color: white;
+  border-radius: 5px;
+}

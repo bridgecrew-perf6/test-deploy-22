@@ -1,0 +1,28 @@
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.error {
+  color: red;
+}
+
+.required {
+  @extend .error;
+}
+
+input {
+  border-radius: 5px;
+  outline: none;
+  padding: 5px;
+}
+
+input::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+
+mat-icon {
+  border: 1px solid black;
+  padding: 3px;
+  border-radius: 5px;
+}

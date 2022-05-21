@@ -1,0 +1,16 @@
+<div class="wrapper">
+  <form [formGroup]="formData" (ngSubmit)="onSubmit(formData.value)">
+    <app-input-control
+      label="Full name"
+      placeholder="Enter full name"
+      type="text"
+      [required]="true"
+      [control]="$any(formData.get('fullName'))"
+      icon="person"
+    ></app-input-control>
+
+    <div class="btn-submit">
+      <button [disabled]="formData.invalid">Submit</button>
+    </div>
+  </form>
+</div>

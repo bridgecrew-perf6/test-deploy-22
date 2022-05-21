@@ -1,8 +1,9 @@
 <div class="container">
   <div class="form-group">
     <label>{{ label }}</label>
-    <ion-icon name="person-circle-outline"></ion-icon>
+    <span class="required">*</span>
     <div class="form-control">
+      <!-- <mat-icon>{{ icon }}</mat-icon> -->
       <input
         [formControl]="control"
         [type]="type"
@@ -14,7 +15,7 @@
         <div class="error" *ngIf="control.errors?.['required']">
           This value is required
         </div>
-        <div *ngIf="control.errors?.['minlength']">
+        <div class="error" *ngIf="control.errors?.['minlength']">
           This value has {{control.errors?.['minlength'].actualLength}} but must
           be at least {{control.errors?.['minlength'].requiredLength}}
         </div>
