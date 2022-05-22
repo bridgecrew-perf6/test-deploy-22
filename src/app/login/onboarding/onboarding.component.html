@@ -1,0 +1,47 @@
+<div class="wrapper">
+  <div class="container">
+    <!-- <div class="waiting-one" [ngClass]="{ splash: isChangeScreen }">
+      <ng-container [ngTemplateOutlet]="onboarding"></ng-container>
+    </div> -->
+    <div class="waiting-two">
+      <ng-container [ngTemplateOutlet]="comfort"></ng-container>
+    </div>
+  </div>
+</div>
+
+<ng-template #onboarding>
+  <div class="onboarding-img">
+    <img [src]="img" />
+  </div>
+  <div class="logo">
+    <img [src]="logo" />
+  </div>
+</ng-template>
+
+<ng-template #comfort>
+  <div class="content" [ngSwitch]="ascending">
+    <div class="aloho" *ngSwitchCase="1">
+      <div class="comfort">
+        <img [src]="imgDoorstep" />
+      </div>
+      <div class="description">
+        <h1>{{ lang.SPLASH.LIVES }}</h1>
+        <p>{{ lang.SPLASH.DOORSTEP }}</p>
+      </div>
+    </div>
+    <div class="test" *ngSwitchDefault>
+      <div class="comfort">
+        <img [src]="imgComfort" />
+      </div>
+      <div class="description">
+        <h1>{{ lang.SPLASH.COMFORT }}</h1>
+        <p>{{ lang.SPLASH.ENJOY }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="actions">
+    <button class="btn-next" (click)="changeBackground($event)">
+      {{ lang.SPLASH.NEXT }}
+    </button>
+  </div>
+</ng-template>

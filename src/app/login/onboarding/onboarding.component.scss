@@ -1,0 +1,54 @@
+body {
+  background-color: #000;
+}
+
+.onboarding-img {
+  background-color: #000;
+}
+
+.onboarding-img img {
+  width: 100%;
+}
+
+.logo img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.splash {
+  display: none;
+}
+
+.comfort {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30%;
+}
+
+.description {
+  width: 60%;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+}
+
+.description p {
+  font-size: 0.8rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-next {
+  padding: 15px 45px;
+  outline: none;
+  border-radius: 15px;
+  font-size: 16px;
+  background: linear-gradient(98.81deg, #53e88b -0.82%, #15be77 101.53%);
+  color: #fff;
+}
